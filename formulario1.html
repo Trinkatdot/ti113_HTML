@@ -1,34 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulario 1</title>
 </head>
+
 <body>
-    <form action="" method="get">
+    <form action="" method="get" border="2" cellpadding="5">
         <fieldset>
             <legend>Dados Pessoais</legend>
-                <legend>
-                
-                    <label for="txt_nome">nome:</label>
-                    <input placeholder="Nome"  required type="text" name="txt_nome" id="" txt_nome">
-                    <label for="txt_sobrenome">sobrenome:</label>
-                    <input placeholder="sobrenome"  required type="text" name="txt_nome" id="" txt_nome"><br><br>
+            <table>
+                <!-- 1° Linha -->
+                <tr>
+                    <td><label for="txt_nome">nome:</label></td>
+                    <td><input placeholder="Nome" required type="text" name="txt_nome" id="" txt_nome"></td>
+                    <td><label for="text_sobrenome">sobrenome:</label>
+                    <td>
+                    <td><input type="text" name="txt_sobrenome" id="txt sobrenome"><br></td>
+                <tr>
 
-                    <label for="dt_nascimento">Nascimento</label>
-                    <input size="2px" placeholder="dd" ="text" name="dd" id="dd"> -
-                    <input size="2px" placeholder="mm" type="text" name="mm" id="mm"> -
-                    <input size="4px" placeholder="yyy" type="text" name="yyyy" id="yyyy"><br><br>
+                    <!-- 2°Linha -->
+                <tr>
+                    <td><label for="dt_nascimento">Nascimento:</label></td>
+                    <td><input size="2" placeholder="dd" type="text" name="dd" id="dd"> -
+                        <input size="2" placeholder="mm" type="text" name="mm" id="mm"> -
+                        <input size="4" placeholder="yyyy" type="text" name="yyyy" id="yyyy">
+                    </td>
+                </tr>
 
-                    <label for="txt_rg">RG:</label>
-                    <input type="text" name="rg" id="txt_rg"><br><br>
+                <!-- 3°Linha -->
+                <tr>
+                    <td><label for="txt_rg">RG:</label>
+                    <td>
+                        <input type="text" name="RG" id="txt_rg"><br>
+                </tr>
 
-                    <label for="txt_cpf">CPF:</label>
-                    <input size="7px"  type="text" name="cpf" id="txt_cpf"> - 
-                    <input size="3px"  type="text" name="cpf" id="txt_cpf"><br><br>
-                </legend>
-            </fieldset>
-        </form>
+                <tr>
+                    <td><label for="txt_cpf">CPF:</label>
+                    </td>
+
+                    <td><input type="text" name="cpf" id="txt_cpf"> - </td>
+                    <td><input size="3" type="text" name="cpf_2" id="txt_cpf_2"> </td>
+
+                </tr>
+            </table>
+        </fieldset>
+    </form>
 </body>
+
+<form action="" method="get" border="2" cellpadding="5">
+    <fieldset>
+        <legend>Dados De Endereço</legend>
+        <table>
+            <!-- 1° Linha -->
+            <tr>
+                <td><label for="txt_nome">Rua:</label></td>
+                <td><input placeholder="Nome" required type="text" name="txt_nome" id="" txt_nome"></td>
+                <td><label for="txt_numero">Numero:</label>
+                <td>
+                <td><input size="2px" type="text" name="txt_numero" id="txt_numero"><br></td>
+            <tr>
+
+                <!-- 2°Linha -->
+            <tr>
+                <td><label for="dt_nascimento">Bairro:</label></td>
+                <td><input placeholder="Digite Seu Bairro" type="text" name="bairro" id="bairro">
+                </td>
+            </tr>
+
+            <!-- 3°Linha -->
+            <tr>
+                <td><label for="lst_uf">Estado</label></td>
+                <td><select name="slt_uf" id="clt_uf">
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="EX">Estrangeiro</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td><label for="txt_cpf">CEP:</label></td>
+                <td>
+                    <input size="7" type="text" name="cpf" id="txt_cpf"> -
+                    <input size="3" type="text" name="cpf_2" id="txt_cpf_2">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+
+<form action="" method="get" border="2" cellpadding="5">
+    <fieldset>
+        <legend>Dados De login</legend>
+        <table>
+            <!-- 1° Linha -->
+            <tr>
+                <td><label for="txt_nome">E-mail:</label></td>
+                <td><input placeholder="E-mail:" required type="text" name="txt_E-mail:" id="" txt_E-mail:"></td>
+            <tr>
+
+                <!-- 2°Linha -->
+            <tr>
+                <td> <label for="txt_imagem">Imagem de perfil:</label></td>
+                <td> <input type="file" name="txt_imagem" id="txt_imagem" accept="image/*">
+
+            </tr>
+
+            <!-- 3°Linha -->
+            <tr>
+                <td><label for="txt_nome">Login de Usuario</label></td>
+                <td><input placeholder="Login" required type="text" name="txt_E-mail:" id="" txt_E-mail:"></td>
+            <tr>
+
+            <tr>
+                <td><label for="txt_nome">Senha:</label></td>
+                <td><input placeholder="Senha:" required type="text" name="txt_E-mail:" id="" txt_E-mail:"></td>
+            <tr>
+
+            <tr>
+                <td><label for="txt_nome">Confirme a senha</label></td>
+                <td><input placeholder="confirme a senha" required type="text" name="txt_E-mail:" id="" txt_E-mail:">
+                </td>
+            <tr>
+        </table>
+    </fieldset>
+    <br>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+</form>
+</body>
+
 </html>
