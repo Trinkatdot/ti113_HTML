@@ -1,10 +1,22 @@
+table {
+    margin: auto; /* Centraliza horizontalmente */
+
+    text-align: center; /* Centraliza o conteúdo */
+}
 div{
     background-color: rgb(228, 228, 228);
     padding-top: 20px;
     padding-bottom: 20px;
-
 } 
 #btn1{
-    color: blue;
-    background-color: black;
+    color: rgb(240, 240, 240);
+    background-color: rgb(174, 62, 207);
+}
+#btn2{
+    color: rgb(240, 240, 240);
+    background-color: rgb(174, 62, 207);
+}
+#btn3{
+    color: rgb(240, 240, 240);
+    background-color: rgb(174, 62, 207);
 }
