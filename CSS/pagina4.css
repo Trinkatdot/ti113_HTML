@@ -48,6 +48,10 @@ table#tabela1 {
 table#tabela1 .linha2 td {
     padding: 15px 30px;
     background-color: #222;
+    margin: 0;
+    border-spacing: 0;
+
+    
 }
 
 table#tabela1 .linha2 {

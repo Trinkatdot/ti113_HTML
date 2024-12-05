@@ -1,16 +1,20 @@
-body{
-    background-color: #0c0c53;
+body {
+    background: linear-gradient(to bottom, #121117, #4f5d76);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100vh;
 }
-h1{
+
+h1 {
     text-transform: uppercase;
 }
+
 form {
     padding: 20px;
     margin: 0 auto;
     width: 50%;
     height: 500px;
     background-color: #bbb;
+    
 }
 
 table {
@@ -18,19 +22,40 @@ table {
     padding-right: 50px;
 }
 
-
+input::placeholder{
+    color:#bbb;
+}
 input {
-    width: 100%;
+    width: 95%;
     height: 30px;
-    margin: 10px 0;
+    border-width: 0;
+    border-radius: 5px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    background-color: #4f5d76;
+}
+textarea::placeholder{
+    color:#bbb;
+    
 }
 
-textarea {
-    width: 100%;
-    margin: 10px 0;
+td.mensagem{
+    vertical-align: top;
+    padding-top: 10px;
 }
-button{
+textarea {
+    width: 95%;
+    background-color: #4f5d76;
+    border-width: 0;
+    border-radius: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+}
+
+button {
     background-color: #0e347a;
     color: white;
     padding: 10px 30px;
+    border-radius: 5px;
 }
